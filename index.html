@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .form-container {
+        display: flex;
+        background-color: #fff;
+        border: 2px solid #ccc;
+        border-radius: 65px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .form-text {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 20px 0 60px;
+      }
+
+      .form-header {
+        font-size: 29px;
+        margin: 0;
+      }
+
+      .form-span {
+        font-size: 18px;
+      }
+
+      .form-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+        padding: 0 40px 0 40px;
+        border-right: 1px solid rgba(175, 175, 175, 0.5);
+        border-left: 1px solid rgba(175, 175, 175, 0.5);
+      }
+
+      .form-group {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .form-label {
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      .form-input {
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .button-mobile {
+        display: none;
+      }
+
+      .form-button {
+        padding: 16px 35px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 24px;
+        cursor: pointer;
+        margin: 20px 0;
+        font-size: 18px;
+      }
+
+      .form-button:hover {
+        background-color: #0056b3;
+      }
+
+      @media (max-width: 1200px) {
+        .form-wrapper {
+          display: none;
+        }
+
+        .form-text {
+          padding: 0 40px 0 20px;
+        }
+
+        .form-header {
+          font-size: 24px;
+        }
+
+        .form-span {
+          font-size: 16px;
+        }
+
+        .call-desktop {
+          display: none;
+        }
+
+        .button-desktop {
+          display: none;
+        }
+
+        .button-mobile {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <div class="form-text">
+        <h2 class="form-header">Get A Free Estimate</h2>
+        <span class="form-span"
+          >Request Your FREE, No Obligation Estimate.
+        </span>
+      </div>
+      <form class="form-wrapper">
+        <div class="form-group">
+          <label class="form-label" for="fullName">Full Name</label>
+          <input
+            class="form-input"
+            type="text"
+            id="fullName"
+            name="fullName"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="email">Email Address</label>
+          <input
+            class="form-input"
+            type="email"
+            id="email"
+            name="email"
+            required
+          />
+        </div>
+        <button class="form-button" type="submit">Get Started</button>
+      </form>
+      <div class="form-text call-desktop">
+        <span class="form-span"
+          >For Faster Service,<br />
+          Give Us A Call</span
+        >
+        <a href="tel:8663382141">866-338-2141</a>
+      </div>
+      <button class="form-button button-mobile">
+        <a
+          style="text-decoration: none; color: #fff"
+          href="https://www.aretepestcontrol.devplace.org/contact-us"
+          >Contact Us</a
+        >
+      </button>
+    </div>
+  </body>
+</html>
